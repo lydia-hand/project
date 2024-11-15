@@ -1,6 +1,6 @@
 ---
 title: "Inflation Data"
-author: "Aaron Peikert"
+author: "L. Handke"
 date: "`r Sys.Date()`"
 output: pdf_document
 repro:
@@ -25,7 +25,7 @@ The dataset we use stems from the [Bank of England Research datasets](https://ww
 
 I quote:
 
-> This dataset contains the individual responses to our Inflation Attitudes Survey, a quarterly survey of people’s feelings about inflation and other economic variables like the interest rate. 
+> This dataset contains the **individual** responses to our *Inflation Attitudes Survey*, a quarterly survey of people’s feelings about inflation and other economic variables like the interest rate. 
 
 ```{r load-inflation}
 # code chunks can come from other scripts, this one is loaded from:
@@ -37,7 +37,7 @@ I quote:
 # note that they must be empty and the names must correspond
 ```
 
-For this dataset the Bank of England asked `r prettyNum(nrow(inflation), big.mark = ".", decimal.mark = ",")` people for their opinion on the perceived and expected inflation.
+For this dataset the **Bank of England** asked `r prettyNum(nrow(inflation), big.mark = ".", decimal.mark = ",")` people for their opinion on the perceived and expected inflation.
 The survey has run quarterly since `r min(inflation$year)`.
 
 ```{r}
@@ -56,3 +56,17 @@ inflation %>%
   theme(legend.position = c(.1, .9)) +
   NULL
 ```
+
+Lalala
+
+```{r}
+
+with(mtcars, plot(hp, mpg))
+```
+
+```{python}
+print("Hello World! Python here, do you miss R already?")
+```
+
+Text:
+Why is the object missing?
